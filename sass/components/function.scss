@@ -1,0 +1,28 @@
+.function
+{
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    .func_card
+    {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: $color-light-grey;
+        border-radius: 15px;
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4); 
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+
+        .number
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            color: white;
+        }
+    }
+}
