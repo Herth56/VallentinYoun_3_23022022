@@ -35,8 +35,8 @@ p, a
         border-style: none;
         border-radius: 40px;
         background: #FEB9FF;
-        background: -moz-linear-gradient(-45deg, #FEB9FF 0%, #FB48F6 40%, #AA35AC 100%);
-        background: -webkit-linear-gradient(-45deg, #FEB9FF 0%, #FB48F6 40%, #AA35AC 100%);
-        background: linear-gradient(135deg, #FEB9FF 0%, #FB48F6 40%, #AA35AC 100%);
+        background: -moz-linear-gradient(-45deg, $color-secondary 0%, $color-primary 90%);
+        background: -webkit-linear-gradient(-45deg, $color-secondary 0%, $color-primary 90%);
+        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 90%);
     }
 }
