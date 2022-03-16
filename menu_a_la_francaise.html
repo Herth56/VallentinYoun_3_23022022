@@ -9,17 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>A la Française</title>
 </head>
 <body>
 <header>
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
     <img src="assets/logo/ohmyfood.png" alt="Logo Ohmyfood">
 </header>
 
 <main>
-    <img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+    <img class="top_img" src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
     <div class="container">
         <div class="menu_title">
             <h1>À la française</h1>
@@ -28,43 +28,45 @@
 
         <div class="menu_starter">
             <h2>Entrées</h2>
-            <div class="menu_card">
+            <div class="menu_cards">
+                <div class="menu_card">
                 
-                <div class="menu_card_text">
-                    <h3>Tartare de poulpe acidulé</h3>
-                    <p>Aux zestes d'orange</p>
+                    <div class="menu_card_text">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <p>Aux zestes d'orange</p>
+                    </div>
+                    <div class="menu_card_price">
+                        25€
+                    </div>
+                    <div class="menu_card_check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
-                <div class="menu_card_price">
-                    25€
+    
+                <div class="menu_card">
+                    <div class="menu_card_text">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="menu_card_price">
+                        35€
+                    </div>
+                    <div class="menu_card_check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
-                <div class="menu_card_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_card_text">
-                    <h3>Velouté de légumes d'antan</h3>
-                    <p>Carotte, panais, topinambour</p>
-                </div>
-                <div class="menu_card_price">
-                    35€
-                </div>
-                <div class="menu_card_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_card_text">
-                    <h3>Soupe à l'oignon</h3>
-                    <p>Revisitée</p>
-                </div>
-                <div class="menu_card_price">
-                    20€
-                </div>
-                <div class="menu_card_check">
-                    <i class="fa-solid fa-circle-check"></i>
+    
+                <div class="menu_card">
+                    <div class="menu_card_text">
+                        <h3>Soupe à l'oignon</h3>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="menu_card_price">
+                        20€
+                    </div>
+                    <div class="menu_card_check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,7 +159,6 @@
 </main>
 
 <footer>
-    <div>
         <h4>Ohmyfood</h4>
         <ul>
             <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
@@ -165,7 +166,6 @@
             <li><a href="#">Mentions légales</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </div>
 </footer>
 </body>
 </html>

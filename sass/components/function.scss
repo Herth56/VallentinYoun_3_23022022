@@ -2,7 +2,7 @@
 {
     padding-left: 2%;
     padding-right: 2%;
-    
+
     .func_card
     {
         display: flex;
@@ -12,6 +12,10 @@
         border-radius: 15px;
         -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4); 
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+        padding-left: 8%;
+        margin-bottom: 8%;
+        margin-left: 4%;
+        width: 84%;
 
         .number
         {
@@ -23,6 +27,8 @@
             border-radius: 50%;
             background-color: $color-primary;
             color: white;
+            position: absolute;
+            left: 10px;
         }
     }
 }

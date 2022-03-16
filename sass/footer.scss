@@ -1,0 +1,34 @@
+footer
+{
+    background-color: $color-dark-grey;
+    background-size: cover;
+    padding-left: 20px;
+    
+    h4
+    {
+        font-family: 'Shrikhand', sans-serif;
+        color: white;
+        padding-top: 30px;
+    
+    }
+    
+    p, a
+    {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+
+    ul
+    {
+        list-style-type: none;
+        line-height: 30px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+
+        .fa-solid
+        {
+            padding-right: 10px;
+        }
+    }
+}

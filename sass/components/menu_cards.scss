@@ -1,0 +1,15 @@
+.menu_cards
+{
+    .menu_card
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu_card_check
+        {
+            visibility: hidden;
+        }
+    }
+}

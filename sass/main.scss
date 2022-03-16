@@ -1,4 +1,42 @@
-body
+h1, h2, h3
 {
-    background-color: aqua;
+    font-family: 'Shrikhand', sans-serif;
+}
+
+p, a
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.localization
+{
+    font-family: 'Roboto', sans-serif;
+    color: $color-dark-grey;
+    text-align: center;
+
+    .current
+    {
+        background-color: $color-medium-grey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: larger;
+
+            .fa-solid.fa-location-dot
+            {
+                padding-right: 10px;
+            }
+    }
+
+    button
+    {
+        color: white;
+        padding: 10px;
+        border-style: none;
+        border-radius: 40px;
+        background: #FEB9FF;
+        background: -moz-linear-gradient(-45deg, #FEB9FF 0%, #FB48F6 40%, #AA35AC 100%);
+        background: -webkit-linear-gradient(-45deg, #FEB9FF 0%, #FB48F6 40%, #AA35AC 100%);
+        background: linear-gradient(135deg, #FEB9FF 0%, #FB48F6 40%, #AA35AC 100%);
+    }
 }
