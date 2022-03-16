@@ -3,6 +3,17 @@
     padding-left: 2%;
     padding-right: 2%;
 
+    h1, h2, h3
+    {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: larger;
+    }
+
     .func_card
     {
         display: flex;
@@ -17,13 +28,23 @@
         margin-left: 4%;
         width: 84%;
 
+        &:hover
+        {
+            background-color: rgba($color-primary, 0.2);
+
+            .fa-solid
+            {
+                color: $color-primary;
+            }
+        }
+
         .number
         {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 24px;
-            height: 24px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             background-color: $color-primary;
             color: white;

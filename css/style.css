@@ -30,20 +30,16 @@ p, a {
 .localization .current .fa-solid.fa-location-dot {
   padding-right: 10px;
 }
-.localization button {
-  color: white;
-  padding: 10px;
-  border-style: none;
-  border-radius: 40px;
-  background: #FEB9FF;
-  background: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 90%);
-  background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 90%);
-  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 90%);
-}
 
 .top_img {
   height: 300px;
   width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -71,9 +67,53 @@ footer ul .fa-solid {
   padding-right: 10px;
 }
 
+.btn {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border-style: none;
+  border-radius: 40px;
+  background: #FEB9FF;
+  background: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 90%);
+  background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 90%);
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 90%);
+  -webkit-box-shadow: 5px 5px 15px 5px #EDEDED;
+  box-shadow: 5px 5px 15px 5px #EDEDED;
+}
+
+.btn-explore {
+  padding: 20px;
+  font-size: larger;
+}
+.btn-explore:hover {
+  -webkit-box-shadow: 5px 5px 15px 5px #353535;
+  box-shadow: 5px 5px 15px 5px #353535;
+}
+
+.btn-order {
+  padding: 10px 40px 10px 40px;
+  font-size: larger;
+}
+.btn-order:hover {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-box-shadow: 5px 5px 15px 5px #353535;
+  box-shadow: 5px 5px 15px 5px #353535;
+  opacity: 0.9;
+}
+
 .function {
   padding-left: 2%;
   padding-right: 2%;
+}
+.function h1, .function h2, .function h3 {
+  font-family: "Roboto", sans-serif;
+}
+.function p {
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
 }
 .function .func_card {
   display: flex;
@@ -88,17 +128,33 @@ footer ul .fa-solid {
   margin-left: 4%;
   width: 84%;
 }
+.function .func_card:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.function .func_card:hover .fa-solid {
+  color: #9356DC;
+}
 .function .func_card .number {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
   position: absolute;
   left: 10px;
+}
+
+.menu_cards .menu_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_cards .menu_card .menu_card_check {
+  visibility: hidden;
 }
 
 .restaurants_cards .restaurant_card {
@@ -143,16 +199,6 @@ footer ul .fa-solid {
   visibility: hidden;
   transform: scale(0);
   transition: transform 400ms ease-in-out;
-}
-
-.menu_cards .menu_card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.menu_cards .menu_card .menu_card_check {
-  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

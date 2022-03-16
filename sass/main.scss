@@ -27,16 +27,4 @@ p, a
                 padding-right: 10px;
             }
     }
-
-    button
-    {
-        color: white;
-        padding: 10px;
-        border-style: none;
-        border-radius: 40px;
-        background: #FEB9FF;
-        background: -moz-linear-gradient(-45deg, $color-secondary 0%, $color-primary 90%);
-        background: -webkit-linear-gradient(-45deg, $color-secondary 0%, $color-primary 90%);
-        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 90%);
-    }
 }
