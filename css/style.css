@@ -17,8 +17,16 @@ p, a {
 
 .localization {
   font-family: "Roboto", sans-serif;
+  background-color: #F7F7F7;
   color: #353535;
   text-align: center;
+  padding-bottom: 40px;
+}
+.localization .text {
+  padding: 4% 14%;
+}
+.localization h2 {
+  font-family: "Roboto", sans-serif;
 }
 .localization .current {
   background-color: #EDEDED;
@@ -29,6 +37,16 @@ p, a {
 }
 .localization .current .fa-solid.fa-location-dot {
   padding-right: 10px;
+}
+
+.restaurants {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F7F7F7;
+}
+.restaurants h2 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
 }
 
 .top_img {
@@ -50,7 +68,9 @@ footer {
 footer h4 {
   font-family: "Shrikhand", sans-serif;
   color: white;
+  margin-top: auto;
   padding-top: 30px;
+  font-size: larger;
 }
 footer p, footer a {
   font-family: "Roboto", sans-serif;
@@ -110,6 +130,7 @@ footer ul .fa-solid {
 }
 .function h1, .function h2, .function h3 {
   font-family: "Roboto", sans-serif;
+  padding-left: 8px;
 }
 .function p {
   font-family: "Roboto", sans-serif;
@@ -157,27 +178,43 @@ footer ul .fa-solid {
   visibility: hidden;
 }
 
+.restaurants_cards h3, .restaurants_cards p {
+  font-family: "Roboto", sans-serif;
+}
 .restaurants_cards .restaurant_card {
   display: block;
   position: relative;
   text-decoration: none;
+  border-radius: 25px;
+  background-color: white;
+  margin: 20px;
 }
 .restaurants_cards .restaurant_card img {
-  height: 250px;
+  height: 200px;
   width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
 }
 .restaurants_cards .restaurant_card .new {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   background-color: #99E2D0;
-  color: white;
+  color: green;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 2px;
 }
 .restaurants_cards .restaurant_card .text_card {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  line-height: 1%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .restaurants_cards .restaurant_card .text_card .fa-regular.fa-heart {
   position: relative;
@@ -199,6 +236,10 @@ footer ul .fa-solid {
   visibility: hidden;
   transform: scale(0);
   transition: transform 400ms ease-in-out;
+  color: #9356DC;
+  color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+  color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+  color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

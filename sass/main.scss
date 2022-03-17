@@ -1,6 +1,7 @@
 h1, h2, h3
 {
     font-family: 'Shrikhand', sans-serif;
+
 }
 
 p, a
@@ -11,8 +12,20 @@ p, a
 .localization
 {
     font-family: 'Roboto', sans-serif;
+    background-color: $color-light-grey;
     color: $color-dark-grey;
     text-align: center;
+    padding-bottom: 40px;
+
+    .text
+    {
+        padding: 4% 14%;
+    }
+
+    h2
+    {
+        font-family: 'Roboto', sans-serif; 
+    }
 
     .current
     {
@@ -26,5 +39,18 @@ p, a
             {
                 padding-right: 10px;
             }
+    }
+}
+
+.restaurants
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color-light-grey;
+
+    h2
+    {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 20px;
     }
 }
