@@ -10,7 +10,7 @@
         display: block;
         position: relative;
         text-decoration: none;
-        border-radius: 25px;
+        border-radius: 15px;
         background-color: white;
         margin: 20px;
 
@@ -25,8 +25,8 @@
         .new
         {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: 20px;
             background-color: $color-tertiary;
             color: green;
             font-weight: bold;
