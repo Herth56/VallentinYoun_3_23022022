@@ -10,6 +10,11 @@
     background: linear-gradient(170deg, $color-secondary 0%, $color-primary 90%);
     -webkit-box-shadow: 5px 5px 15px 5px $color-medium-grey; 
     box-shadow: 5px 5px 15px 5px $color-medium-grey;
+
+    &:hover
+    {
+        background: linear-gradient(170deg, $color-secondary-light 0%, $color-primary-light 90%);
+    }
 }
 
 .btn-explore
@@ -35,9 +40,9 @@
         -webkit-transform: scale(1);
         -o-transform: scale(1);
         -ms-transform: scale(1);
-        transform: scale(1);
+        transform: scale(1.2);
         -webkit-box-shadow: 5px 5px 15px 5px $color-dark-grey; 
         box-shadow: 5px 5px 15px 5px $color-dark-grey;
-        opacity: 0.9;
+        
     }
 }

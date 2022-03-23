@@ -13,12 +13,14 @@
         border-radius: 15px;
         background-color: white;
         margin: 20px;
+        -webkit-box-shadow: 0px 0px 16px -4px $color-dark-grey; 
+        box-shadow: 0px 0px 16px -4px $color-dark-grey;
 
         img
         {
             height: 200px;
             width: 100%;
-            border-radius: 25px 25px 0px 0px;
+            border-radius: 15px 15px 0px 0px;
             object-fit:cover
         }
 
@@ -45,39 +47,6 @@
             line-height: 1%;
             padding-left: 8%;
             padding-right: 8%;
-
-            .fa-regular.fa-heart
-            {
-                position: relative;
-                font-size: 30px;
-
-                &:hover
-                {
-                    visibility: hidden;
-
-                    .fa-solid.fa-heart
-                    {
-                        visibility: visible;
-                        transform: scale(1);
-                    }
-                }
-
-                .fa-solid.fa-heart
-                {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    visibility: hidden;
-                    transform: scale(0);
-                    transition: transform 400ms ease-in-out;
-                    color: #9356DC;
-                    color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
-                    color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
-                    color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-                }
-            }
         }
     }
 }
