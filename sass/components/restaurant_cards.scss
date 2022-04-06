@@ -50,3 +50,23 @@
         }
     }
 }
+
+@media screen and (min-width: 992px)
+{
+    .restaurants_cards
+    {
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-evenly;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: transparent;
+
+        h2
+        {
+            font-family: 'Roboto', sans-serif;
+            margin-left: 20px;
+        }
+    }
+}

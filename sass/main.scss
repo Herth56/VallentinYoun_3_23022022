@@ -54,3 +54,82 @@ p, a
         margin-left: 20px;
     }
 }
+
+@media screen and (min-width: 992px)
+{ 
+    body
+    {
+        background-color: black;
+        background-image: url("../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+        background-attachment: scroll;
+    
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        h1, h2, h3
+        {
+            color: white;
+            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(0,0,0,0);
+        }
+    }
+
+    .localization
+    {
+        font-family: 'Roboto', sans-serif;
+        background-color: transparent;
+        color: $color-dark-grey;
+        text-align: center;
+        padding-bottom: 40px;
+
+        .text
+        {
+            padding: 4% 14%;
+        }
+
+        h2
+        {
+            font-family: 'Roboto', sans-serif; 
+        }
+
+        .current
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: baseline;
+            font-weight: bold;
+            background-color: $color-light-grey;
+            border: 3px solid $color-primary;
+            border-radius: 25px;
+            margin: 10% 40% 0% 40%;
+            padding: 0;
+
+            -webkit-box-shadow: 5px 5px 15px 5px $color-dark-grey; 
+            box-shadow: 5px 5px 15px 5px $color-dark-grey;
+
+                .fa-solid.fa-location-dot
+                {
+                    background-color: $color-secondary;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 25px;
+                }
+        }
+
+        .current:hover
+        {
+            -webkit-box-shadow: 5px 5px 15px 5px $color-dark-grey; 
+            box-shadow: 5px 5px 15px 5px $color-dark-grey;
+
+            -webkit-box-shadow: 2px 2px 15px 2px $color-light-grey; 
+            box-shadow: 2px 2px 15px 2px $color-light-grey;
+        }
+    }
+
+    .restaurants
+    {
+        background-color: transparent;
+    }
+}
