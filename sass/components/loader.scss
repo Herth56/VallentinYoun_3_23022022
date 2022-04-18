@@ -1,0 +1,126 @@
+.loader
+{
+    animation: 2s disappear forwards;
+
+    p
+    {
+        font-family:'Shrikhand', sans-serif;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 100%;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .text
+    {
+        transform: scale(0);
+        font-size: x-large;
+        padding: 0 0.75rem;
+        animation: 1s grow ease both;   
+        animation-delay: 0.25s;
+    }
+
+    .graphics
+    {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 32px;
+        width: 100%;
+        margin: 0;
+        border-radius:50%;
+        position: relative;
+        overflow: hidden;
+
+        .fa-solid.fa-bowl-food
+        {
+            margin-top: 20px;
+            font-size: 44px;
+            color: #9356DC;
+            color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+            color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+            color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+            box-shadow: $color-secondary;
+            animation: spin 1.5s linear infinite;
+        }
+    }
+}
+
+.loading_content
+{
+    animation: 4s appear ease-in-out;
+}
+
+@media screen and (max-width: 992px)
+{
+    .header_main
+    {
+        animation: 4s appear ease-in-out;
+    }
+}
+
+@keyframes appear
+{ 
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+     }
+}
+
+@keyframes disappear
+{ 
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        display: none;
+        height: 0;
+        opacity: 0;
+     }
+}
+
+@keyframes grow 
+{ 
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+          transform: scale(1);
+     }
+}
+
+@keyframes spin
+{
+    from {
+      transform:rotate(0)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+}
+
+
+@media screen and (min-width: 992px)
+{
+    .loader
+    {
+        display:none;
+    }
+
+    .loading_content
+{
+    animation: none;
+}
+}

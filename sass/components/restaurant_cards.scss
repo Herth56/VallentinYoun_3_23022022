@@ -57,11 +57,16 @@
     {
         display: flex;
         flex-direction: row;
-        
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: transparent;
+        width: 100%;
+
+        .restaurant_card
+        {
+            width: 23%;
+        }
 
         h2
         {

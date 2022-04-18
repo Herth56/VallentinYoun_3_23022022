@@ -57,3 +57,38 @@ main
         }
     }
 }
+
+@media screen and (min-width: 992px)
+{
+    main
+    {
+        .top_img
+        {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container
+        {
+
+            h2:after
+            {
+                content: '';
+                display: block;
+                position: relative;
+                width: 3%;
+                border: 2px solid $color-tertiary;
+                background-color: $color-tertiary;
+                margin-top: 8px;
+            }
+
+            .button-order
+            {
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+            }
+        }
+    }
+}

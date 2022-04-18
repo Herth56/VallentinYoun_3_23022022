@@ -13,6 +13,7 @@
         border-radius: 20px;
         width: 94%;
         margin-bottom: 10px;
+        overflow: hidden;
         -webkit-box-shadow: 0px 0px 16px -4px $color-dark-grey; 
         box-shadow: 0px 0px 16px -4px $color-dark-grey;
 
@@ -25,14 +26,17 @@
             .menu_card_text
             {
                 padding-left: 3%;
-                line-height: 10px;
                 width: 100%;
-                max-width: 100%;
-                overflow: hidden;
+                // max-width: 100%;
+                // overflow: hidden;
 
                 h3, p
                 {
                     font-family: 'Roboto', sans-serif;
+                    word-break: break-word;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin-bottom: 12px;
                 }
             }
 
@@ -43,6 +47,7 @@
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
                 padding-bottom: 12px;
+                padding-right: 10px;
                 max-width: 100%;
                 
             }
@@ -56,11 +61,14 @@
             background-color: $color-tertiary;
             border-radius: 0 20px 20px 0;
             visibility: hidden;
+            transition: all 1s ease;
+            width: 0;
 
             i
             {
                 color: white;
-                font-size: 24px;
+                font-size: 0px;
+                transition: all 0.5s ease;
             }
         }
 
@@ -69,9 +77,10 @@
             .menu_card_text
             {
                 white-space: nowrap;
-                text-overflow: ellipsis;
+                // text-overflow: ellipsis;
                 overflow: hidden;
-                max-width: 100%;
+                width: 80%;
+                // max-width: 100%;
             }
 
             .menu_card_check
@@ -79,15 +88,39 @@
                 width: 30%;
                 visibility: visible;
                 margin-right: 0;
-                transition-duration: 0.5s;
-                transition-timing-function: ease;
 
                 i
                 {
                     transform: rotate(360deg);
-	                transition-duration: 0.5s;
+                    font-size: 24px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .menu_cards
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .menu_card
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 20px;
+            height: 100px;
+            width: 28%;
+            margin-bottom: 10px;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 0px 16px -4px $color-dark-grey; 
+            box-shadow: 0px 0px 16px -4px $color-dark-grey;
         }
     }
 }
