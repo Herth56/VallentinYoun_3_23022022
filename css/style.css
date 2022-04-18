@@ -367,7 +367,7 @@ footer ul .fa-solid {
 }
 
 .loader {
-  animation: 2s disappear forwards;
+  animation: 6s disappear forwards;
 }
 .loader p {
   font-family: "Shrikhand", sans-serif;
@@ -398,13 +398,13 @@ footer ul .fa-solid {
   overflow: hidden;
 }
 .loader .graphics .fa-solid.fa-bowl-food {
+  position: relative;
   margin-top: 20px;
   font-size: 44px;
   color: #9356DC;
   color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
   color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
   color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-  box-shadow: #FF79DA;
   animation: spin 1.5s linear infinite;
 }
 
@@ -539,8 +539,8 @@ footer ul .fa-solid {
   .menu_cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
   }
   .menu_cards .menu_card {
     display: flex;
@@ -564,6 +564,24 @@ footer ul .fa-solid {
     padding-bottom: 0;
     padding-right: 10px;
     max-width: 100%;
+  }
+}
+.menu_cards .menu_card:nth-child(1) {
+  animation: fadein 2s;
+}
+.menu_cards .menu_card:nth-child(2) {
+  animation: fadein 3s;
+}
+.menu_cards .menu_card:nth-child(3) {
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .restaurants_cards h3, .restaurants_cards p {

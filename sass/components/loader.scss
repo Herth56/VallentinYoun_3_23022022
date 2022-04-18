@@ -1,6 +1,6 @@
 .loader
 {
-    animation: 2s disappear forwards;
+    animation: 6s disappear forwards;
 
     p
     {
@@ -37,13 +37,15 @@
 
         .fa-solid.fa-bowl-food
         {
+            position: relative;
             margin-top: 20px;
             font-size: 44px;
             color: #9356DC;
             color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
             color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
             color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-            box-shadow: $color-secondary;
+            // -webkit-box-shadow: 0px 10px 8px 6px $color-tertiary; 
+            // box-shadow: 0px 10px 8px 6px $color-tertiary;
             animation: spin 1.5s linear infinite;
         }
     }
