@@ -121,6 +121,22 @@
             overflow: hidden;
             -webkit-box-shadow: 0px 0px 16px -4px $color-dark-grey; 
             box-shadow: 0px 0px 16px -4px $color-dark-grey;
+
+            .menu_card_content
+            {
+                .menu_card_price
+                {
+                    display: flex;
+                    align-items: flex-end;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    align-items: center;
+                    padding-bottom: 0;
+                    padding-right: 10px;
+                    max-width: 100%;
+                    
+                }
+            }
         }
     }
 }
