@@ -8,8 +8,8 @@
     background: -moz-linear-gradient(-45deg, $color-secondary 0%, $color-primary 90%);
     background: -webkit-linear-gradient(-45deg, $color-secondary 0%, $color-primary 90%);
     background: linear-gradient(170deg, $color-secondary 0%, $color-primary 90%);
-    -webkit-box-shadow: 5px 5px 15px 5px $color-medium-grey; 
-    box-shadow: 5px 5px 15px 5px $color-medium-grey;
+    -webkit-box-shadow: 5px 5px 15px 5px $color-btn-grey; 
+    box-shadow: 5px 5px 15px 5px $color-btn-grey;
 
     &:hover
     {

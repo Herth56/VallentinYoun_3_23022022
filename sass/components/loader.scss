@@ -53,14 +53,18 @@
 
 .loading_content
 {
-    animation: 4s appear ease-in-out;
+    animation: 4s appear forwards;
+    animation-delay: 4s;
+    opacity: 0;
 }
 
 @media screen and (max-width: 992px)
 {
     .header_main
     {
-        animation: 4s appear ease-in-out;
+        animation: 4s appear forwards;
+        animation-delay: 4s;
+        opacity: 0;
     }
 }
 
@@ -112,7 +116,6 @@
       transform: rotate(360deg)
     }
 }
-
 
 @media screen and (min-width: 992px)
 {

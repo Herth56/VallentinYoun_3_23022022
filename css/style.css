@@ -243,8 +243,8 @@ footer ul .fa-solid {
   background: -moz-linear-gradient(-45deg, #FF79DA 0%, #9356DC 90%);
   background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #9356DC 90%);
   background: linear-gradient(170deg, #FF79DA 0%, #9356DC 90%);
-  -webkit-box-shadow: 5px 5px 15px 5px #EDEDED;
-  box-shadow: 5px 5px 15px 5px #EDEDED;
+  -webkit-box-shadow: 5px 5px 15px 5px #949494;
+  box-shadow: 5px 5px 15px 5px #949494;
 }
 .btn:hover {
   background: linear-gradient(170deg, #fface8 0%, #ae80e5 90%);
@@ -409,12 +409,16 @@ footer ul .fa-solid {
 }
 
 .loading_content {
-  animation: 4s appear ease-in-out;
+  animation: 4s appear forwards;
+  animation-delay: 4s;
+  opacity: 0;
 }
 
 @media screen and (max-width: 992px) {
   .header_main {
-    animation: 4s appear ease-in-out;
+    animation: 4s appear forwards;
+    animation-delay: 4s;
+    opacity: 0;
   }
 }
 @keyframes appear {
@@ -479,6 +483,7 @@ footer ul .fa-solid {
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 16px -4px #353535;
   box-shadow: 0px 0px 16px -4px #353535;
+  opacity: 0;
 }
 .menu_cards .menu_card .menu_card_content {
   width: 100%;
@@ -567,21 +572,30 @@ footer ul .fa-solid {
   }
 }
 .menu_cards .menu_card:nth-child(1) {
-  animation: fadein 2s;
+  animation: fadein 2s forwards;
+  animation-delay: 0.4s;
 }
 .menu_cards .menu_card:nth-child(2) {
-  animation: fadein 3s;
+  animation: fadein 2s forwards;
+  animation-delay: 0.8s;
 }
 .menu_cards .menu_card:nth-child(3) {
-  animation: fadein 4s;
+  animation: fadein 2s forwards;
+  animation-delay: 1.2s;
+}
+.menu_cards .menu_card:nth-child(4) {
+  animation: fadein 2s forwards;
+  animation-delay: 1.6s;
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .restaurants_cards h3, .restaurants_cards p {
