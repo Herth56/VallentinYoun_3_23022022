@@ -343,13 +343,16 @@ footer ul .fa-solid {
 .fa-regular.fa-heart {
   position: relative;
   font-size: 30px;
-}
-.fa-regular.fa-heart:hover {
-  visibility: hidden;
+  opacity: 1;
 }
 .fa-regular.fa-heart:hover .fa-solid.fa-heart {
-  visibility: visible;
   transform: scale(1);
+  background-image: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+  background-image: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+  background-image: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .fa-regular.fa-heart .fa-solid.fa-heart {
   position: absolute;
@@ -357,13 +360,12 @@ footer ul .fa-solid {
   right: 0;
   bottom: 0;
   left: 0;
-  visibility: hidden;
   transform: scale(0);
   transition: transform 1ms ease-in-out;
-  color: #9356DC;
-  color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
-  color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
-  color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+}
+
+.fa-solid.fa-heart:hover .fa-regular.fa-heart {
+  opacity: 0;
 }
 
 .loader {
@@ -402,9 +404,6 @@ footer ul .fa-solid {
   margin-top: 20px;
   font-size: 44px;
   color: #9356DC;
-  color: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
-  color: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
-  color: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
   animation: spin 1.5s linear infinite;
 }
 
