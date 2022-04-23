@@ -413,13 +413,12 @@ footer ul .fa-solid {
   opacity: 0;
 }
 
-@media screen and (max-width: 992px) {
-  .header_main {
-    animation: 4s appear forwards;
-    animation-delay: 4s;
-    opacity: 0;
-  }
+.header_main {
+  animation: 4s appear forwards;
+  animation-delay: 4s;
+  opacity: 0;
 }
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -455,15 +454,6 @@ footer ul .fa-solid {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@media screen and (min-width: 992px) {
-  .loader {
-    display: none;
-  }
-
-  .loading_content {
-    animation: none;
   }
 }
 .menu_cards {
